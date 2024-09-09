@@ -1,6 +1,14 @@
 /*Comentario
 El . es para llamar a clases
 */
+
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
 html{
     font-size: 62.5%;
 }
@@ -13,4 +21,32 @@ font-size: 3.8rem;
 }
 .titulo span{
 font-size: 2rem;
+}
+
+.navegacion-principal{
+    background-color: var(--secundario);
+    display: flex; /*Flexbox esta diseñado para alinear elementos en los diseños*/
+    /*justify-content para FILAS/ align-item es para COLUMNAS (flex-direction)*/
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*Al poner el cursor en el hipervinculo*/
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;/*Remueve el estilo subrayado en el texto*/
+    padding: 1rem;
+}
+
+/*MArgin es por fuera y padding es por dentro*/
+.contenedor{
+    width: 120rem;/*1200 pixeles porque 1 rem =  10px*/
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
 }

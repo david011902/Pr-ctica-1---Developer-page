@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Siempre va primero normalize-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Importacion de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--Enlace al CSS personalizado-->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
+    
 </head>
 <body>
     <!--Comentario-->
     <header>
         <h1 class="titulo">David Acosta <span>Developer</span></h1>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Cliente</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Cliente</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
     <section>
         <h2>Diseño y desarrollo Web</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
