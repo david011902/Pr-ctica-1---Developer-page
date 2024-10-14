@@ -9,12 +9,17 @@ El . es para llamar a clases
     --secundario: #0097a7;
     --gris: #757575;
 }
+
+
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px;
+    background-color: antiquewhite;
 }
+
+
 .titulo{
 text-align: center;
 font-size: 3.8rem;
@@ -28,8 +33,10 @@ font-size: 2rem;
     display: flex; /*Flexbox esta diseñado para alinear elementos en los diseños*/
     /*justify-content para FILAS/ align-item es para COLUMNAS (flex-direction)*/
     justify-content: space-between;
-    font-weight: bold;
+    font-weight: bold; /*Negritas en texto*/
     font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 /*Al poner el cursor en el hipervinculo*/
 .navegacion-principal a:hover{
@@ -44,9 +51,39 @@ font-size: 2rem;
 
 /*MArgin es por fuera y padding es por dentro*/
 .contenedor{
-    width: 120rem;/*1200 pixeles porque 1 rem =  10px*/
+    max-width: 120rem;/*1200 pixeles porque 1 rem =  10px*/
     margin: 0 auto;
 }
 .nav-bg{
     background-color: var(--secundario);
 }
+
+/*Recomendado
+480px para moviles
+780px para tablets*/
+
+
+@media (min-width: 480px){
+    body {
+        background-color: blue;
+    }
+}
+@media (min-width: 768px){
+    body {
+        background-color: cornflowerblue;
+    }
+}
+
+@media (min-width: 768px){
+.navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    }
+
+.hero{
+    background-image: url(../img/hero.jpg);/* ../ es para regresar un nivel de directorio ya que la carpeta img esta afuera de "css"*/
+    background-repeat: no-repeat; /* Sirve para evitar la repeticion de la imagen cuando es pequeña*/
+    background-size: cover;/*Sirve para cubrir la imagen con todo el tamaño posible*/ 
+}
+
