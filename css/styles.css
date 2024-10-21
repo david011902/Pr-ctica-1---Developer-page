@@ -19,8 +19,7 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     /*background-color: antiquewhite;*/
-    background-image: linear-gradient
-    (to top, var(--grisClaro) 0%,  var(--blanco) 100%); /* De gris claro a oscuro */
+    background: linear-gradient(to bottom, #f0f0f0, #b3b3b3, #808080, #4d4d4d);
 }
 
 /*Tipografia*/
@@ -89,14 +88,14 @@ h1,h2,h3{
         background-color: cornflowerblue;
     }
 }
-
+*/
 @media (min-width: 768px){
 .navegacion-principal{
     flex-direction: row;
     justify-content: space-between;
     }
     }
-*/
+
 .hero{
     background-image: url(../img/hero.jpg);/* ../ es para regresar un nivel de directorio ya que la carpeta img esta afuera de "css"*/
     background-repeat: no-repeat; /* Sirve para evitar la repeticion de la imagen cuando es pequeña*/
