@@ -19,7 +19,8 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     /*background-color: antiquewhite;*/
-    background: linear-gradient(to bottom, #f0f0f0, #b3b3b3, #808080, #4d4d4d);
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2, #e6e6e6);
+
 }
 
 /*Tipografia*/
@@ -147,7 +148,7 @@ h1,h2,h3{
     align-items: flex-end;
     justify-content: center;
     font-size: 25px;
-    font-weight: bold;
+    font-weight:normal;
 }
 
 @media (min-width:768px) {
@@ -157,3 +158,43 @@ h1,h2,h3{
     }
 
 }
+
+/*Servicios*/
+@media (min-width: 768px){
+    .servicios{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; por fracciones*/
+        /*grid-template-columns: 33.3% 33.3% 33.3%; por porcentaje*/
+        grid-template-columns: repeat(3, 1fr);
+        /*Esta propiedad define el área de las columnas y la funcion repeat() repite 3 veces una fraccion en el 
+        grid/rejilla/cuadricula*/
+        column-gap: 1rem;/*Espacio entre columnas usando el gap(Espacio vacio entre columnas)*/
+
+    }
+}
+
+/*Centrar iconos*/
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        color: #0097a7;
+        font-weight: normal;
+    }
+    p{
+        text-align: center;
+        line-height: 2;/*Interlineado en el texto*/
+    }
+    .iconos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 15rem;
+        height: 15rem;
+        background-color: var(--primario);
+        border-radius: 50%; /*Lo hace circular*/
+    }
+}
+
+
